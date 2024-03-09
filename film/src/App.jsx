@@ -11,7 +11,7 @@ function App() {
 
     try {
       // Data fetch karne ke liye asynchrnous function call
-      const response = await fetch(`http://www.omdbapi.com/?apikey=6a89c544&t=${movie}`);
+      const response = await fetch(`https://www.omdbapi.com/?apikey=6a89c544&t=${movie}`);
    
       const dat = await response.json();
       
@@ -30,7 +30,7 @@ function App() {
 
   return (
    <div className='div'>
-
+ <h1 className=' heading'>Film Website</h1>
     <div className=' insidediv'>
 
     <input type="text" placeholder='search movie name..'  name='search' id='search' 
